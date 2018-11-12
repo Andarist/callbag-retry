@@ -1,0 +1,49 @@
+{
+  "name": "callbag-retry",
+  "version": "0.0.0",
+  "description": "👜 Callbag operator which resubscribes to the source given amount of times.",
+  "main": "./dist/callbag-retry.cjs.js",
+  "module": "./dist/callbag-retry.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest --env=node",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "preversion": "npm test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/callbag-retry.git"
+  },
+  "keywords": [
+    "callbag",
+    "callbags"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/callbag-retry/issues"
+  },
+  "homepage": "https://github.com/Andarist/callbag-retry#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "callbag-concat": "^1.1.0",
+    "callbag-from-iter": "^1.2.0",
+    "callbag-pipe": "^1.1.1",
+    "callbag-subscribe": "^1.5.0",
+    "callbag-throw-error": "^1.0.1",
+    "husky": "^1.1.3",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.15.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.0",
+    "rollup-plugin-babel": "^4.0.3"
+  }
+}
