@@ -1,6 +1,6 @@
 {
   "name": "callbag-retry",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "👜 Callbag operator which resubscribes to the source given amount of times.",
   "main": "./dist/callbag-retry.cjs.js",
   "module": "./dist/callbag-retry.esm.js",
